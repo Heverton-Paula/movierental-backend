@@ -1,2 +1,3 @@
 from .authenticated_or_registration import IsAuthenticatedOrRegistration
 from .owner_or_admin import IsOwnerOrAdmin
+from .readonly import ReadOnly

@@ -1,2 +1,0 @@
-from rest_framework import serializers
-from .serializers.movies_serializer import MovieSerializer

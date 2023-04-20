@@ -1,0 +1,2 @@
+from .users_serializer import UserSerializer
+from .movies_serializer import MovieSerializer

@@ -15,8 +15,11 @@ COPY ./requirements.txt .
 
 # Instalação das dependências
 RUN pip install --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt
-    
+    apt-get update && \
+    apt-get install -y libpq-dev && \
+    pip install --no-cache-dir -r requirements.txt && \
+    pip install psycopg2-binary
+
 # Copia o código da aplicação para o diretório de trabalho do container
 COPY /src /src/
 

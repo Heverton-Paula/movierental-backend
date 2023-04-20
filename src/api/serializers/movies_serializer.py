@@ -1,7 +1,5 @@
 from rest_framework import serializers
-from rest_framework.permissions import IsAdminUser
-from ..models.movies import Movie
-from api.permissions import ReadOnly
+from api.models import Movie
 
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
